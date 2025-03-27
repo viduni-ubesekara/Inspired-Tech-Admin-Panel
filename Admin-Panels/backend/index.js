@@ -9,6 +9,7 @@ const orderRouter = require('./supplierPanel/routes/orders.js');
 const feedbackRoter = require('./feedbackPanel/routes/FeedbackRoute.js');
 const questionRouter = require('./feedbackPanel/routes/questionRoute.js');
 const promotionRouter = require("./marketingPanel/routes/promotionRoute.js");
+const cartRoutes = require("./inventoryControl/inventoryRoutes/cartRoutes");
 
 // Middleware section
 app.use(cors());
@@ -37,6 +38,7 @@ app.listen(port, () => {
 app.use('/inventoryPanel', inventoryRoutes); // For all the Inventory Control Panel routes
 app.use("/supplier",supplierRouter);
 app.use("/order",orderRouter);
+app.use("/cart", cartRoutes);
 app.use("/api/user", feedbackRoter);
 app.use("/api/question", questionRouter);
 app.use("/api/userpromo", promotionRouter);

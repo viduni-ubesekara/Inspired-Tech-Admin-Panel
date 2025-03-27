@@ -235,8 +235,8 @@ export default function Promotion() {
                     value={formData.promotionType}
                     onChange={handleChange}
                   >
-                    <MenuItem value="Promotion">Promotion</MenuItem>
-                    <MenuItem value="Discount">Discount</MenuItem>
+                    <MenuItem value="Individual">Individual</MenuItem>
+                    <MenuItem value="Group">Group</MenuItem>
                   </TextField>
                 </Grid>
                 <Grid item xs={12}>

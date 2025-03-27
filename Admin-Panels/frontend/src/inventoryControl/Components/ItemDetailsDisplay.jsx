@@ -43,7 +43,7 @@ function itemDetailsDisplay({ item }) {
               {/* <Text fontSize='md'>Last Updated Date : {item.updatedAt}</Text> */}
               
               <Link className='edit-btn' to={`/inventoryPanel/item/${item.itemID}`}>Edit</Link>
-              <Button colorScheme='red' size='sm' marginTop='6px' onClick={handleDelete}>Remove</Button>
+              <Button id='delete-btn'colorScheme='red' size='sm' marginTop='6px' onClick={handleDelete}>Remove</Button>
             </div>
           </Stack>
         </Box>
