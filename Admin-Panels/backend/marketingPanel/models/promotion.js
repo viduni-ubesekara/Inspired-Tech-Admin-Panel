@@ -10,7 +10,7 @@ const promotionSchema = new mongoose.Schema({
   endDate: { type: Date, required: true },
   promotionType: {
     type: String,
-    enum: ["Promotion", "Discount"],
+    enum: ["Individual", "Group"],
     required: true,
   },
   imageName: { type: String, required: true }, // Original image file name
